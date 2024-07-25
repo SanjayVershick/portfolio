@@ -1,0 +1,189 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-300px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .content {
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-duration: 0.7s;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('rm209-adj-18-g.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(44, 62, 80, 01); /* Semi-transparent background */
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-left: 2.5%;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.header-text h1, .header-text p {
+    margin: 0;
+}
+
+.portfolio-heading {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 120px; /* Adjust according to header height */
+    flex: 1;
+}
+
+nav {
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent background */
+    color: #fff;
+    width: 250px;
+    padding-top: 2rem;
+    position: fixed;
+    top: 120px; /* Adjust according to header height */
+    left: 0;
+    height: calc(100% - 120px); /* Adjust according to header height */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 0.8rem 0;
+}
+
+nav ul li a:hover {
+    background-color: #2c3e50;
+}
+
+.download-resume {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+   padding-bottom: 20%;
+}
+
+.download-button {
+    color: #fff;
+    background-color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding-bottom: 05%;
+}
+
+.download-button:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+.content {
+    flex: 1;
+    font-weight: 500;
+    padding: 2rem;
+    margin-left: 250px; /* Adjust according to nav width */
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 0.5rem 0;
+}
+
+section a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
